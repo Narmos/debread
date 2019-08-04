@@ -1,0 +1,10 @@
+DirectoryIndex index.php
+
+RewriteEngine On
+
+# On force la navigation sécurisée en https
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Réécriture des pages
+RewriteRule ^([a-zA-Z0-9_\-]*)?/?$ index.php?page=$1&%{QUERY_STRING}

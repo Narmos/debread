@@ -1,0 +1,55 @@
+html {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+    padding-bottom: 4rem;
+    background-color: #f5f5f5;
+}
+
+body.vertical-center-body {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+form,
+.article-content {
+    max-width: 600px;
+}
+
+.github-corner {
+    fill:#eb6864;
+}
+
+.share-url,
+.copy-check {
+    display: none;
+}
+
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.bootstrap {
+    color: #7952b3;
+}
+
+.bootstrap:hover {
+    color: #563d7c;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display:none;
+    cursor: pointer;
+}

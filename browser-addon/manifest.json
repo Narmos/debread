@@ -1,0 +1,30 @@
+{
+
+    "manifest_version": 2,
+    "name": "Debread",
+    "version": "2.0",
+
+    "description": "Affiche entièrement les articles réservés aux abonnés de certains quotidiens suisses (p. ex., www.24heures.ch, www.tdg.ch)",
+
+    "icons": {
+        "48": "icons/debread-48.png",
+        "96": "icons/debread-96.png",
+        "128": "icons/debread-128.png"
+    },
+
+    "content_scripts": [
+        {
+            "matches": [
+                "*://www.24heures.ch/*",
+                "*://www.bilan.ch/*",
+                "*://www.landbote.ch/*",
+                "*://www.tagesanzeiger.ch/*",
+                "*://www.tdg.ch/*",
+                "*://www.zsz.ch/*",
+                "*://www.zuonline.ch/*"
+            ],
+            "js": ["jquery-3.4.1.slim.min.js", "debread.js"]
+        }
+    ]
+
+}
