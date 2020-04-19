@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Lire entièrement les articles réservés aux abonnés de certains quotidiens suisses (p. ex. 24heures, TDG)" />
+        <title>{% block title %}Debread - Débrideur de quotidiens suisses{% endblock %}</title>
+        <link rel="icon" type="image/png" href="{{ asset('images/favicon.png') }}" />
+        <link rel="stylesheet" href="{{ asset('css/bootstrap-journal-4.4.1.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/fontawesome-5.13.0.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body class="{% block bodyClass %}{% endblock %}">
+        {% block bodyContent %}{% endblock %}
+        <footer class="text-center text-muted small py-4">
+            2018 - 2020 | Codé avec 
+            <i class="fas fa-heart text-primary"></i>
+            <a href="https://symfony.com/" target="_blank"><i class="fab fa-symfony"></i></a>
+            <a href="https://getbootstrap.com" target="_blank"><i class="fab fa-bootstrap"></i></a>
+        </footer>
+        <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Retour en haut de la page" data-toggle="tooltip" data-placement="left"><i class="fas fa-chevron-up"></i></a>
+        <script src="{{ asset('js/jquery-3.4.1.min.js') }}"></script>
+        <script src="{{ asset('js/popper-1.16.0.min.js') }}"></script>
+        <script src="{{ asset('js/bootstrap-4.4.1.min.js') }}"></script>
+        <script src="{{ asset('js/scripts.js') }}"></script>
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

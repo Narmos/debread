@@ -10,8 +10,9 @@ Une fois l'extension installée, les articles sont visibles directement depuis l
 
 ## Screenshots
 
-![Home page](https://debread.ch/assets/images/screenshot_home.png)
-![Article page](https://debread.ch/assets/images/screenshot_article.png)
+![Home](https://debread.ch/public/images/screenshot_home.png)
+![Article](https://debread.ch/public/images/screenshot_article.png)
+![Article (Dark mode)](https://debread.ch/public/images/screenshot_article_dark.png)
 
 ## Extensions
 
@@ -24,17 +25,15 @@ Une fois l'extension installée, les articles sont visibles directement depuis l
 |-------------------|--------------------|-------------------|------------------|
 |24 heures          |www.24heures.ch     |:heavy_check_mark: |:heavy_check_mark:|
 |Bilan              |www.bilan.ch        |:x: *              |:heavy_check_mark:|
-|Der Landbote       |www.landbote.ch     |:heavy_check_mark: |:heavy_check_mark:|
-|Tages-Anzeiger     |www.tagesanzeiger.ch|:heavy_check_mark: |:heavy_check_mark:|
 |Tribune de Genève  |www.tdg.ch          |:heavy_check_mark: |:heavy_check_mark:|
-|Zürcher Unterländer|www.zuonline.ch     |:heavy_check_mark: |:heavy_check_mark:|
-|Zürichsee-Zeitung  |www.zsz.ch          |:heavy_check_mark: |:heavy_check_mark:|
 
 \* *prise en charge prochainement*
 
 ## Ressources
 
-* [Bootstrap 4.3.1](https://getbootstrap.com)
-* [Fontawesome 5.9.0](https://fontawesome.com)
+* [Symfony](https://symfony.com/)
+* [Bootstrap](https://getbootstrap.com)
+* [Fontawesome](https://fontawesome.com)
 * [GitHub Corners](https://github.com/tholman/github-corners)
 * [Link to top page](https://bootsnipp.com/snippets/x3p9)
+* [Dark Mode Switch](https://github.com/coliff/dark-mode-switch)

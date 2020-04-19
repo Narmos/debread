@@ -1,0 +1,65 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/dark-mode.css') }}">
+{% endblock %}
+
+{% block bodyContent %}
+    <nav class="navbar navbar-dark bg-primary">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="{{ path('home') }}"><i class="fas fa-arrow-left"></i> Retour</a>
+            </li>
+        </ul>
+        {% if existError == false %}
+            <span class="dropdown">
+                <a class="nav-link dropdown-toggle navbar-text" href="#" title="Actions" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-cog"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right text-right" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#" id="copyShareURL"><i class="far fa-clipboard"></i> Copier l'URL de l'article débridé<i class="fas fa-check copy-check text-success ml-2"></i></a>
+                    <a class="dropdown-item" href="{{ article.url }}" target="_blank"><i class="far fa-eye"></i> Voir l'article original</a>
+                    <div class="dropdown-item">
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+                            <label class="custom-control-label" for="darkSwitch">Mode sombre</label>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        {% endif %}
+    </nav>
+    <div class="container mt-5">
+        {% if existError %}
+            <div class="alert alert-primary" role="alert">
+                <h4 class="alert-heading"><i class="fas fa-grin-beam-sweat"></i> Ouups! je n'ai pas trouvé l'article</h4>
+                L'URL de l'article est invalide ou ne provient pas d'un site supporté.
+            </div>
+            <div class="alert alert-warning mt-3" role="alert">
+                <small><i class="fas fa-exclamation-triangle"></i> La version "mobile" des articles n'est pas supportée. (par ex. https://<strong>m</strong>.24heures.ch/xxx)</small>
+            </div>
+        {% else %}
+            <article>
+                <header>
+                    <h1 class="mb-4">{{ article.title }}</h1>
+                    <h4 class="mb-4">{{ article.subtitle | striptags('<span>') | raw }}</h4>
+                </header>
+                <div class="article-content">
+                    {% if existPicture %}
+                        <figure class="figure mb-4">
+                            <img src="{{ article.picture }}" class="figure-img img-fluid rounded" alt="image de l'article">
+                            <figcaption class="figure-caption">{{ article.pictureCaption }}</figcaption>
+                        </figure>
+                    {% endif %}
+                    {% for paragraph in article.content %}
+                        <p class="mb-4">{{ paragraph | raw }}</p>
+                    {% endfor %}
+                </div>
+                <input type="url" id="shareURL" class="share-url" value="{{ shareUrl }}">
+            </article>
+        {% endif %}
+    </div>
+{% endblock %}
+{% block javascripts %}
+    <script src="{{ asset('js/dark-mode-switch.min.js') }}"></script>
+{% endblock %}
