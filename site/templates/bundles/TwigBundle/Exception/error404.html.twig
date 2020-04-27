@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block bodyClass %}vertical-center-body{% endblock %}
+{% block bodyContent %}
+    <div class="container">
+        <header class="py-5 text-center">
+            <h1 class="display-1 font-weight-normal text-primary"><i class="far fa-newspaper"></i> Debread</h1>
+        </header>
+        <div class="error text-center">
+            <h1>Erreur 404</h1>
+            <h2 class="text-muted">la page demandée est introuvable</h2>
+            <p><a href="{{ path('home') }}"><i class="fas fa-arrow-circle-left"></i> retour à la page d'accueil</a></p>
+        </div>
+    </div>
+{% endblock %}

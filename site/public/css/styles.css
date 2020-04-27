@@ -18,7 +18,8 @@ body.vertical-center-body {
 }
 
 form,
-.article-content {
+.article-content,
+#error {
     max-width: 600px;
 }
 
