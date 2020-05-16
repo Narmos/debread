@@ -52,11 +52,12 @@ class ArticleController extends AbstractController
             $existError = true;
         }
 
-        return $this->render('article/article.html.twig', [
+        /* return $this->render('article/article.html.twig', [
             "article" => $article,
             "shareUrl" => $shareUrl,
             "existError" => $existError,
             "existPicture" => $existPicture
-        ]);
+        ]); */
+        return $this->render('close/close.html.twig');
     }
 }

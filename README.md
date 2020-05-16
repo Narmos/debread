@@ -1,12 +1,13 @@
+## Fermeture du service
+Suite à la modification des sites concernés, le débridage des articles n'est plus possible.
 ## A propos
+~~Permet de lire entièrement les articles réservés aux abonnés de certains quotidiens suisses.~~
 
-Permet de lire entièrement les articles réservés aux abonnés de certains quotidiens suisses.
+~~**_Depuis le site debread.ch_**~~
+~~Il suffit de copier/coller l'URL de l'article dans le champs de la page d'accueil~~
 
-**_Depuis le site debread.ch_**  
-Il suffit de copier/coller l'URL de l'article dans le champs de la page d'accueil
-
-**_Avec les extensions pour navigateur_**  
-Une fois l'extension installée, les articles sont visibles directement depuis le site original
+~~**_Avec les extensions pour navigateur_**~~
+~~Une fois l'extension installée, les articles sont visibles directement depuis le site original~~
 
 ## Screenshots
 
@@ -16,18 +17,16 @@ Une fois l'extension installée, les articles sont visibles directement depuis l
 
 ## Extensions
 
-* [Mozilla Firefox](https://addons.mozilla.org/fr/firefox/addon/debread)
-* [Google Chrome](https://chrome.google.com/webstore/detail/debread/gmikgfcepemhnmidnhdmfclohkjlialb?hl=fr)
+* ~~Mozilla Firefox~~
+* ~~Google Chrome~~
 
 ## Support
 
 |                   |URL                 |Site               |Extensions        |
 |-------------------|--------------------|-------------------|------------------|
-|24 heures          |www.24heures.ch     |:heavy_check_mark: |:heavy_check_mark:|
-|Bilan              |www.bilan.ch        |:x: *              |:heavy_check_mark:|
-|Tribune de Genève  |www.tdg.ch          |:heavy_check_mark: |:heavy_check_mark:|
-
-\* *prise en charge prochainement*
+|~~24 heures~~          |~~www.24heures.ch~~     |~~:heavy_check_mark:~~|~~:heavy_check_mark:~~|
+|~~Bilan~~              |~~www.bilan.ch~~        |~~:x:~~                |~~:heavy_check_mark:~~|
+|~~Tribune de Genève~~  |~~www.tdg.ch~~          |~~:heavy_check_mark:~~ |~~:heavy_check_mark:~~|
 
 ## Ressources
 
